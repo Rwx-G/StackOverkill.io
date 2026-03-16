@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: stackoverkill-frontend:latest
+    image: ghcr.io/rwx-g/stackoverkill.io/frontend:latest
     container_name: stackoverkill-frontend
     restart: unless-stopped
     ports:
@@ -17,7 +17,7 @@ services:
       - stackoverkill-internal
 
   backend:
-    image: stackoverkill-backend:latest
+    image: ghcr.io/rwx-g/stackoverkill.io/backend:latest
     container_name: stackoverkill-backend
     restart: unless-stopped
     # No ports exposed - only accessible via internal network
