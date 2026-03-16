@@ -1,0 +1,33 @@
+# StackOverkill.io - LLMs.txt
+
+> StackOverkill.io est un outil gratuit et fun qui permet de savoir si ton infrastructure technique est adaptee a tes vrais besoins en 2 minutes.
+
+## A propos
+
+StackOverkill.io analyse l'adequation entre la complexite de ton application et celle de ton infrastructure. Le test pose 14 questions simples (7 sur l'app, 7 sur l'infra) et genere un verdict parmi 7 possibles :
+
+- OVERKILL SEVERE : Infrastructure beaucoup trop complexe
+- OVERKILL : Infrastructure trop complexe
+- OVERKILL LEGER : Legere sur-ingenierie
+- EQUILIBRE : Parfaite adequation
+- UNDERKILL LEGER : Legere sous-ingenierie
+- UNDERKILL : Infrastructure insuffisante
+- UNDERKILL SEVERE : Infrastructure tres insuffisante
+
+## Pages principales
+
+- / : Page d'accueil avec presentation du concept
+- /test : Formulaire de test (14 questions)
+- /result : Page de resultat avec verdict et partage
+- /leaderboard : Classement des stacks les plus extremes
+- /mentions-legales : Mentions legales
+- /confidentialite : Politique de confidentialite
+
+## Contact
+
+Site edite par Rwx-G (https://www.rwx-g.fr)
+Contact : contact@rwx-g.fr
+
+## Licence
+
+Le contenu de ce site est protege par le droit d'auteur.

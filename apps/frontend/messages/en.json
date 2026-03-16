@@ -1,0 +1,588 @@
+{
+  "common": {
+    "brand": "StackOverkill.io",
+    "by": "by",
+    "back": "Back"
+  },
+  "home": {
+    "hero": {
+      "title1": "Is your infra",
+      "title2": "COMPLETELY OVERKILL",
+      "title3": "?",
+      "subtitle": "The brutal (but kind) diagnosis of your tech stack.",
+      "subtitleHighlight": "Find out if you really need all that."
+    },
+    "scrollHint": "View verdicts",
+    "cta": {
+      "primary": "Start the diagnosis",
+      "secondary": "Discover my verdict",
+      "final": "Let's go!"
+    },
+    "badges": {
+      "time": "2 minutes",
+      "timeDesc": "flat",
+      "data": "0 data",
+      "dataDesc": "collected",
+      "free": "100% free",
+      "freeDesc": "no BS",
+      "share": "Shareable",
+      "shareDesc": "flex your score"
+    },
+    "verdicts": {
+      "title": "The 7 possible verdicts",
+      "subtitle": "From \"you built a datacenter for a blog\" to \"your FTP deserves better\"",
+      "items": {
+        "severeOverkill": {
+          "name": "SEVERE OVERKILL",
+          "description": "You deployed Kubernetes for your WordPress blog"
+        },
+        "overkill": {
+          "name": "OVERKILL",
+          "description": "Terraform + Ansible for 3 servers... really?"
+        },
+        "lightOverkill": {
+          "name": "LIGHT OVERKILL",
+          "description": "A bit too many microservices, but it's fine"
+        },
+        "balanced": {
+          "name": "BALANCED",
+          "description": "Well done, you found the sweet spot!"
+        },
+        "lightUnderkill": {
+          "name": "LIGHT UNDERKILL",
+          "description": "A bit more automation wouldn't hurt"
+        },
+        "underkill": {
+          "name": "UNDERKILL",
+          "description": "Your FTP to prod deserves better"
+        },
+        "severeUnderkill": {
+          "name": "SEVERE UNDERKILL",
+          "description": "Manual deployment to prod on a Friday night?!"
+        }
+      }
+    },
+    "personas": {
+      "title": "Sound familiar?",
+      "dev": {
+        "emoji": "🤔",
+        "title": "The puzzled dev",
+        "description": "You wonder if your Kubernetes is really necessary for 50 users"
+      },
+      "cfo": {
+        "emoji": "💸",
+        "title": "The worried CFO",
+        "description": "Your cloud bill is exploding and you want to know why"
+      },
+      "cto": {
+        "emoji": "🔥",
+        "title": "The confident CTO",
+        "description": "You want to prove your stack is justified (or not)"
+      }
+    },
+    "final": {
+      "emoji": "🚀",
+      "title": "Ready to know the truth?",
+      "description": "2 minutes to find out if your infra matches your real needs.",
+      "spoiler": "Spoiler: you might cry (from laughter)."
+    }
+  },
+  "test": {
+    "question": "Question",
+    "of": "/",
+    "steps": {
+      "app": "App",
+      "infra": "Infra",
+      "application": "Application",
+      "infrastructure": "Infrastructure",
+      "result": "Result"
+    },
+    "hint": "Click an answer to continue",
+    "questions": {
+      "app": {
+        "criticality": {
+          "title": "What is the business criticality of your application?",
+          "options": {
+            "1": "Experimentation (POC, side project, tests)",
+            "2": "Support (secondary internal tool)",
+            "3": "Operational (regularly used business tool)",
+            "4": "Important (direct impact on business)",
+            "5": "Critical (core business, unavailability = blockage)"
+          }
+        },
+        "userCount": {
+          "title": "How many active users use your application?",
+          "options": {
+            "1": "Very few (1-10 users)",
+            "2": "Small group (11-50 users)",
+            "3": "Team (51-200 users)",
+            "4": "Organization (201-1,000 users)",
+            "5": "Large scale (1,001-10,000 users)",
+            "6": "Mass (10,000+ users)"
+          }
+        },
+        "financialImpact": {
+          "title": "What is the financial stake of this application?",
+          "options": {
+            "1": "None (personal project, learning)",
+            "2": "Indirect (time saving, convenience)",
+            "3": "Moderate (savings or revenue < €1,000/month)",
+            "4": "Significant (€1,000 - €10,000/month)",
+            "5": "Important (€10,000 - €100,000/month)",
+            "6": "Strategic (> €100,000/month)"
+          }
+        },
+        "availability": {
+          "title": "What level of availability is expected?",
+          "options": {
+            "1": "Best effort (no commitment)",
+            "2": "Business hours (office only)",
+            "3": "95-99% (~4h to 36h downtime/month tolerated)",
+            "4": "99.5-99.9% (~45min to 4h/month tolerated)",
+            "5": "99.95-99.99% (~5 to 25min/month tolerated)",
+            "6": "99.99%+ (near zero downtime)"
+          }
+        },
+        "exposure": {
+          "title": "What is the exposure level of your application?",
+          "options": {
+            "1": "Local (same machine or local network)",
+            "2": "Secured internal (VPN, corporate network)",
+            "3": "Private cloud / partners",
+            "4": "Internet with authentication",
+            "5": "Public internet (open to all)"
+          }
+        },
+        "complexity": {
+          "title": "What is the technical complexity of the application?",
+          "options": {
+            "1": "Basic (static pages, simple CRUD)",
+            "2": "Standard (forms, classic REST API)",
+            "3": "Intermediate (workflows, third-party integrations)",
+            "4": "Advanced (real-time, complex calculations, queues)",
+            "5": "Complex (microservices, event-driven, ML/AI)"
+          }
+        },
+        "dataSensitivity": {
+          "title": "What is the data sensitivity level?",
+          "options": {
+            "1": "Public (open data, general info)",
+            "2": "Internal (non-sensitive company data)",
+            "3": "Confidential (personal data, customers)",
+            "4": "Regulated (strict GDPR, health, finance, defense)"
+          }
+        }
+      },
+      "infra": {
+        "sophistication": {
+          "title": "What is the sophistication level of your infrastructure?",
+          "options": {
+            "1": "Basic (single server, simple hosting)",
+            "2": "Containerized (simple Docker, dedicated VM)",
+            "3": "Simple orchestration (Docker Compose, Podman)",
+            "4": "Advanced orchestration (Swarm, Nomad, ECS)",
+            "5": "Kubernetes (managed or on-premise cluster)",
+            "6": "Distributed (multi-cluster, multi-cloud, service mesh)"
+          }
+        },
+        "resilience": {
+          "title": "What is your resilience and recovery level?",
+          "options": {
+            "1": "None (no backup, no plan B)",
+            "2": "Occasional backup (manual or infrequent)",
+            "3": "Automated backup (daily, tested)",
+            "4": "Simple HA (replica, manual failover)",
+            "5": "Auto HA (automatic failover, load balancing)",
+            "6": "Geo-resilience (multi-region, tested DR)"
+          }
+        },
+        "cost": {
+          "title": "What is your monthly infrastructure budget?",
+          "options": {
+            "1": "Zero (personal hardware, amortized existing infra)",
+            "2": "Minimal (€1 - €50/month)",
+            "3": "Moderate (€51 - €300/month)",
+            "4": "Substantial (€301 - €2,000/month)",
+            "5": "Important (€2,001 - €10,000/month)",
+            "6": "Enterprise (> €10,000/month)"
+          }
+        },
+        "teamCapacity": {
+          "title": "What is the team capacity to manage infra?",
+          "options": {
+            "1": "Solo (I manage everything alone, part-time)",
+            "2": "Small team (2-3 people, multi-hat)",
+            "3": "Dedicated team (4-10 people, partial specialization)",
+            "4": "Organization (specialized teams, DevOps/SRE)",
+            "5": "Enterprise (24/7 support, NOC, on-call)"
+          }
+        },
+        "operationalMaturity": {
+          "title": "What is your operational maturity level?",
+          "options": {
+            "1": "Ad-hoc (no docs, we improvise)",
+            "2": "Documented (written procedures, basic runbooks)",
+            "3": "Monitored (alerts, dashboards, centralized logs)",
+            "4": "Measured (SLIs/SLOs defined, post-mortems)",
+            "5": "Optimized (full observability, continuous improvement)"
+          }
+        },
+        "automation": {
+          "title": "What is your automation level?",
+          "options": {
+            "1": "Manual (SSH, clicks, copy-paste)",
+            "2": "Scripted (bash/python scripts, semi-auto)",
+            "3": "Partial CI/CD (auto build, semi-manual deploy)",
+            "4": "Full CI/CD (tests, build, deploy automated)",
+            "5": "GitOps / IaC (versioned infra, auto-remediation)"
+          }
+        },
+        "security": {
+          "title": "What is your infrastructure security level?",
+          "options": {
+            "1": "Minimal (basic firewall, passwords)",
+            "2": "Standard (HTTPS, strong auth, regular updates)",
+            "3": "Reinforced (WAF, vulnerability scans, segmentation)",
+            "4": "Advanced (Zero Trust, SIEM, audits, regular pentests)"
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "loading": {
+      "title": "Calculating...",
+      "subtitle": "Analyzing your stack..."
+    },
+    "card": {
+      "gap": "Gap:",
+      "pts": "pts"
+    },
+    "error": {
+      "title": "Oops!",
+      "retry": "Try again"
+    },
+    "actions": {
+      "download": "Download",
+      "redo": "Redo",
+      "copied": "Copied!",
+      "needHelp": "Need help?"
+    },
+    "leaderboard": {
+      "participate": "Join the leaderboard",
+      "anonymous": "Anonymous: generated nickname and app name",
+      "sending": "Sending...",
+      "send": "Submit",
+      "justAdded": "Added to leaderboard!",
+      "alreadyIn": "Already on leaderboard!",
+      "youAre": "You are",
+      "with": "with",
+      "view": "View →"
+    },
+    "percentile": {
+      "moreOverkill": "More overkill than {percent}% of {total} tested stacks",
+      "moreUnderkill": "More underkill than {percent}% of {total} tested stacks",
+      "moreBalanced": "More balanced than {percent}% of {total} tested stacks"
+    },
+    "share": {
+      "takeTest": "Take the test →"
+    },
+    "twitter": {
+      "overkill": "{emoji} My infra is {severity}OVERKILL (+{gap}) 🔥\n\nIs your stack right-sized for your needs?\n\n",
+      "balanced": "{emoji} I found the perfect sweet spot for my infra! 🎯\n\nIs your stack properly sized?\n\n",
+      "underkill": "{emoji} My infra is {severity}UNDERKILL ({gap}) ❄️\n\nIs your stack right-sized for your needs?\n\n",
+      "severely": "COMPLETELY "
+    },
+    "verdicts": {
+      "OVERKILL_SEVERE": {
+        "label": "SEVERE OVERKILL",
+        "phrases": [
+          "You deployed the Death Star to heat your coffee. ☕",
+          "NASA called, they want their infrastructure back.",
+          "Your Kubernetes cluster cries at night."
+        ]
+      },
+      "OVERKILL": {
+        "label": "OVERKILL",
+        "phrases": [
+          "It's beautiful, but you might be overdoing it.",
+          "Your infra could handle 10x your load. Or 100x.",
+          "You planned for the traffic surge... of 2045."
+        ]
+      },
+      "SLIGHT_OVERKILL": {
+        "label": "LIGHT OVERKILL",
+        "phrases": [
+          "A bit too much, but still reasonable.",
+          "You're forward-thinking, maybe a bit too much.",
+          "Your stack is ready for... optimistic growth."
+        ]
+      },
+      "BALANCED": {
+        "label": "BALANCED",
+        "phrases": [
+          "Well done! You found the perfect sweet spot. 🎯",
+          "The perfect balance between needs and resources.",
+          "Not too much, not too little. You've got this."
+        ]
+      },
+      "SLIGHT_UNDERKILL": {
+        "label": "LIGHT UNDERKILL",
+        "phrases": [
+          "It holds, but a little effort would be welcome.",
+          "You could automate a few things, you know.",
+          "Monitoring? That's for other people?"
+        ]
+      },
+      "UNDERKILL": {
+        "label": "UNDERKILL",
+        "phrases": [
+          "Houston, we have an infrastructure problem.",
+          "Your FTP to prod deserves better than this.",
+          "Backups are overrated anyway..."
+        ]
+      },
+      "UNDERKILL_SEVERE": {
+        "label": "SEVERE UNDERKILL",
+        "phrases": [
+          "It's a miracle it still works! Seriously, invest. 💀",
+          "You deploy via FTP on Friday nights, don't you?",
+          "Your infra dates from the pre-Docker era."
+        ]
+      }
+    },
+    "cta": {
+      "OVERKILL_SEVERE": {
+        "freelance": { "title": "Urgent optimization", "subtitle": "Reduce costs and complexity" }
+      },
+      "OVERKILL": {
+        "freelance": { "title": "Infra optimization", "subtitle": "Simplify and reduce costs" }
+      },
+      "SLIGHT_OVERKILL": {
+        "freelance": { "title": "Architecture review", "subtitle": "Identify possible optimizations" }
+      },
+      "BALANCED": {
+        "freelance": { "title": "Infra Expert", "subtitle": "Consulting and maintenance" },
+        "kaliaops": { "title": "KaliaOps", "subtitle": "ITSM & Documentation" }
+      },
+      "SLIGHT_UNDERKILL": {
+        "freelance": { "title": "Infra structuring", "subtitle": "Implement best practices" },
+        "kaliaops": { "title": "KaliaOps", "subtitle": "Organize your processes" }
+      },
+      "UNDERKILL": {
+        "freelance": { "title": "Upgrade", "subtitle": "Structure your infrastructure" },
+        "kaliaops": { "title": "KaliaOps", "subtitle": "Documentation & process" }
+      },
+      "UNDERKILL_SEVERE": {
+        "freelance": { "title": "Urgent intervention", "subtitle": "Secure your infrastructure" },
+        "kaliaops": { "title": "KaliaOps", "subtitle": "Structure your operations" }
+      }
+    }
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "subtitle": "The most extreme stacks in the community",
+    "loading": "Loading leaderboard...",
+    "refresh": "Refresh",
+    "sortBy": "Sort by:",
+    "sort": {
+      "overkill": "Overkill",
+      "balanced": "Balanced",
+      "underkill": "Underkill"
+    },
+    "table": {
+      "rank": "#",
+      "nickname": "Nickname",
+      "app": "App",
+      "scores": "Scores",
+      "verdict": "Verdict"
+    },
+    "loading": "Loading...",
+    "loadingFull": "Loading leaderboard...",
+    "error": "Unable to load leaderboard",
+    "loadError": "Error loading data",
+    "retry": "Retry",
+    "empty": "No one has joined the leaderboard yet",
+    "beFirst": "Be the first!",
+    "itsYou": "That's you!",
+    "previous": "← Previous",
+    "next": "Next →",
+    "totalEntries": "{count} entry total",
+    "totalEntriesPlural": "{count} entries total",
+    "joinCta": "Want to join the leaderboard?",
+    "takeTest": "Take the test"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "subtitle": "Legal information about StackOverkill.io",
+    "lastUpdate": "Last update: January 2026",
+    "sections": {
+      "publisher": {
+        "title": "Website Publisher",
+        "intro": "The website <strong>StackOverkill.io</strong> is published by:",
+        "publisherName": "Publisher",
+        "status": "Status",
+        "statusValue": "Personal project",
+        "website": "Website",
+        "siret": "SIRET",
+        "email": "Email"
+      },
+      "director": {
+        "title": "Publication Director",
+        "content": "StackOverkill.io is published and maintained by <strong>Rwx-G</strong>."
+      },
+      "hosting": {
+        "title": "Hosting",
+        "intro": "This website is hosted by:",
+        "host": "Host",
+        "type": "Type",
+        "typeValue": "Self-hosted infrastructure",
+        "address": "Address"
+      },
+      "ip": {
+        "title": "Intellectual Property",
+        "intro": "All content on StackOverkill.io is protected by intellectual property laws:",
+        "items": {
+          "texts": "Texts and editorial content",
+          "images": "Images, graphics and illustrations",
+          "logo": "Logo and visual identity",
+          "code": "Source code and algorithms",
+          "structure": "Website structure and architecture"
+        },
+        "warning": "<strong>Important:</strong> Any reproduction, representation, modification or adaptation of any part of the website is prohibited without prior written authorization."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "nature": {
+          "title": "Nature of information",
+          "content": "The information and results provided by StackOverkill.io are delivered <strong>for indicative purposes only</strong>. They do not constitute a professional technical audit."
+        },
+        "declarative": {
+          "title": "Declarative data",
+          "content": "The StackOverkill tool is based on declarative data provided by the user. The relevance of results depends on the accuracy of the information entered."
+        },
+        "decisions": {
+          "title": "User decisions",
+          "content": "The publisher cannot be held responsible for decisions made based on the results provided by the tool, nor for any direct or indirect consequences that may result."
+        }
+      },
+      "contact": {
+        "title": "Contact",
+        "intro": "For any questions about this legal notice or StackOverkill.io:",
+        "email": "Email:",
+        "website": "Website:",
+        "mail": "Mail:"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last update: January 2026",
+    "sections": {
+      "commitment": {
+        "title": "Our commitment: Privacy by Design",
+        "intro": "StackOverkill.io was designed with respect for your privacy as an absolute priority.",
+        "highlight": "By default, we do not collect or store any personal data."
+      },
+      "dataCollected": {
+        "title": "Data Collected",
+        "testData": {
+          "title": "Test data (not stored by default)",
+          "intro": "When you take the StackOverkill test, the answers you provide are:",
+          "items": {
+            "memory": "Processed only in memory to calculate your score",
+            "notStored": "Never stored on our servers by default",
+            "deleted": "Automatically deleted when you close your browser"
+          }
+        },
+        "leaderboard": {
+          "title": "Leaderboard participation (opt-in only)",
+          "intro": "If you <strong>voluntarily</strong> choose to participate in the leaderboard, we only store:",
+          "items": {
+            "nickname": "A randomly generated nickname (e.g., \"SwiftPanda42\")",
+            "appName": "A randomly generated app name (e.g., \"SuperApp\")",
+            "scores": "Your APP and INFRA scores",
+            "verdict": "Your verdict",
+            "date": "The date of participation"
+          },
+          "note": "<strong>Important:</strong> No personally identifiable information is stored."
+        }
+      },
+      "cookies": {
+        "title": "Cookies and Local Storage",
+        "intro": "StackOverkill.io only uses storage technologies <strong>strictly necessary</strong> for the website to function:",
+        "localStorage": {
+          "title": "Local storage (localStorage)",
+          "content": "Used to temporarily store your answers while you complete the test. This data stays on your device."
+        },
+        "noCookies": "<strong>No advertising cookies</strong> or third-party tracking cookies are used on this site."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "content": "<strong>StackOverkill.io does not use any analytics tools.</strong>",
+        "detail": "We do not measure your navigation and do not collect any visit statistics. Your journey on the site remains completely private."
+      },
+      "sharing": {
+        "title": "Data Sharing",
+        "intro": "Your data is <strong>never</strong>:",
+        "items": {
+          "sold": "Sold to third parties",
+          "rented": "Rented or lent",
+          "shared": "Shared for commercial or advertising purposes"
+        }
+      },
+      "rights": {
+        "title": "Your Rights (GDPR)",
+        "intro": "In accordance with the General Data Protection Regulation (GDPR), you have the following rights:",
+        "items": {
+          "access": { "title": "Right of access", "desc": "Obtain a copy of your data" },
+          "rectification": { "title": "Right to rectification", "desc": "Correct inaccurate data" },
+          "erasure": { "title": "Right to erasure", "desc": "Delete your data" },
+          "portability": { "title": "Right to portability", "desc": "Retrieve your data" },
+          "opposition": { "title": "Right to object", "desc": "Refuse certain processing" },
+          "limitation": { "title": "Right to restriction", "desc": "Restrict processing" }
+        },
+        "note": "<strong>Note:</strong> Since we do not collect personally identifiable data by default, these rights generally do not apply in standard use of the site."
+      },
+      "security": {
+        "title": "Security",
+        "intro": "We implement appropriate security measures to protect data against unauthorized access:",
+        "items": {
+          "https": { "title": "Encrypted HTTPS connection", "desc": "All communications are end-to-end encrypted" },
+          "headers": { "title": "Security headers", "desc": "CSP, HSTS, X-Frame-Options and other protections enabled" },
+          "rateLimit": { "title": "Rate limiting", "desc": "Protection against abuse and automated attacks" }
+        }
+      },
+      "dpo": {
+        "title": "Contact - Data Protection Officer",
+        "intro": "For any questions about this privacy policy or to exercise your rights:",
+        "byEmail": "By email",
+        "byMail": "By mail"
+      },
+      "changes": {
+        "title": "Changes to this Policy",
+        "content1": "This privacy policy may be updated occasionally to reflect changes in our practices or legal requirements.",
+        "content2": "Changes will be posted on this page with a new update date. We encourage you to check this page regularly."
+      }
+    }
+  },
+  "footer": {
+    "leaderboard": "Leaderboard",
+    "legal": "Legal notice",
+    "privacy": "Privacy"
+  },
+  "language": {
+    "select": "Language",
+    "current": "English"
+  },
+  "shareable": {
+    "invalidLink": {
+      "title": "Invalid link",
+      "description": "This share link is not valid.",
+      "cta": "Take the test"
+    },
+    "gap": "Gap:",
+    "pts": "pts",
+    "cta": "Take the test too!"
+  }
+}
